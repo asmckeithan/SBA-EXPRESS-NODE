@@ -30,3 +30,5 @@ const users = [
         email: 'JohnnyD437@gmail.com',
       },
   ];
+  module.exports=users
+ 

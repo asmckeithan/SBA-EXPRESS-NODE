@@ -1,28 +1,10 @@
-<!-- users.ejs
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User List</title>
-</head>
-<body>
-    <h1>User List</h1>
-    <ul>
-        <% users.forEach(function(user) { %>
-            <li><%= user.name %></li>
-        <% }); %>
-    </ul>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample EJS Template</title>
+    
     <style>
         /* CSS styles can be included here or in a separate CSS file */
         body {
@@ -53,6 +35,7 @@
 </head>
 <body>
     <div class="container">
+        <%- include('/index.js'); %> 
         <h1>Welcome <%= username %>!</h1>
         
         <% if (isAdmin) { %>
